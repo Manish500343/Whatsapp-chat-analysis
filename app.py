@@ -30,16 +30,16 @@ if uploaded_file is not None:
 
         with col1:
             st.header("Total Messages")
-            st.title(num_messages)
+            st.markdown(f"<p style='font-size:40px;'>{num_messages}</p>", unsafe_allow_html=True)
         with col2:
             st.header("Total Words")
-            st.title(words)
+            st.markdown(f"<p style='font-size:40px;'>{words}</p>", unsafe_allow_html=True)
         with col3:
             st.header("Media Shared")
-            st.title(num_media_messages)
+            st.markdown(f"<p style='font-size:40px;'>{num_media_messages}</p>", unsafe_allow_html=True)
         with col4:
             st.header("Links Shared")
-            st.title(num_links)
+            st.markdown(f"<p style='font-size:40px;'>{num_links}</p>", unsafe_allow_html=True)
 
         # monthly timeline
         st.title("Monthly Timeline")
